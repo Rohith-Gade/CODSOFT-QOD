@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text=""
+        android:fontFamily="serif"
+        android:textSize="40dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/textView"
+        >
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:text="Share"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            tools:ignore="NotSibling" />
+        <Button
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/shareButton"
+            android:drawableLeft="@drawable/ic_baseline_bookmark_24"
+            android:text="Favorite"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+</RelativeLayout>
